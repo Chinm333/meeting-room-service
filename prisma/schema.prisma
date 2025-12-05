@@ -9,7 +9,7 @@ datasource db {
 
 model Room {
   id        Int      @id @default(autoincrement())
-  name      String   @unique
+  name      String   @db.Citext @unique
   capacity  Int
   floor     Int
   amenities String[]
